@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\patterns\CourseDesignPatterns\homework2\AbstractFactoryHomework" t="IncludeFlat">
+      <e p="AbstractFactoryHomework" t="IncludeRecursive">
+        <e p="AbstractFactory" t="Include">
+          <e p="ICarBody.cs" t="Include" />
+          <e p="ICarFactory.cs" t="Include" />
+          <e p="IEngine.cs" t="Include" />
+          <e p="IVehicleInterior.cs" t="Include" />
+          <e p="TypeInterior.cs" t="Include" />
+        </e>
+        <e p="AbstractFactoryHomework.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BMW" t="Include">
+          <e p="BmwBody.cs" t="Include" />
+          <e p="BmwCarFactory.cs" t="Include" />
+          <e p="BmwEngine.cs" t="Include" />
+          <e p="BmwInterior.cs" t="Include" />
+        </e>
+        <e p="Lada" t="Include">
+          <e p="LadaCarBody.cs" t="Include" />
+          <e p="LadaCarFactory.cs" t="Include" />
+          <e p="LadaEngine.cs" t="Include" />
+          <e p="LadaInterior.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="AbstractFactoryHomework.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="AbstractFactoryHomework.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\karamov\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\karamov\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_AbstractFactoryHomework.197973352.00" t="ExcludeRecursive" />
+  </component>
+</project>
