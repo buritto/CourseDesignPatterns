@@ -4,7 +4,7 @@ using Example_04.Homework.Models;
 
 namespace Example_04.Homework.SecondOrmLibrary
 {
-    public interface ISecondOrm : IOrmAdapter
+    public interface ISecondOrm
     {
         ISecondOrmContext Context { get; }
     }

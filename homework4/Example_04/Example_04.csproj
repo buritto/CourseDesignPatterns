@@ -78,6 +78,7 @@
     <Compile Include="Homework\Models\DbUserInfoEntity.cs" />
     <Compile Include="Homework\Models\Interfaces\IDbEntity.cs" />
     <Compile Include="Homework\SecondOrmLibrary\ISecondOrm.cs" />
+    <Compile Include="Homework\SecondOrmLibrary\SecondOrmAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
