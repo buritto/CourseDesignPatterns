@@ -7,7 +7,7 @@
 Release
 Debug
 **/bin/*
-*/obj/**
+**/obj/**
 
 
 # deps
@@ -23,8 +23,8 @@ packages/*
 **/AssemblyTitle.cs
 *.orig
 
-.vs/*
-.idea/*
+**/.vs/*
+**/.idea/*
 
 # appplication data
 AppData
