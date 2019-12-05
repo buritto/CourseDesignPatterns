@@ -7,19 +7,10 @@ namespace VisiterSolve.Elements
         public int Height;
         public int Width;
 
-        public void AcceptDrawer(IDrawVisitor visitor)
-        {
-            visitor.DrawRectangle(this);
-        }
 
-        public int AcceptArea(IAreaVisitor visitor)
+        public void Accept(IVisitor visitor)
         {
-            return visitor.GetRectangleArea(this);
-        }
-
-        public object AcceptMagic(ISomeMagicVisitor visitor)
-        {
-            return visitor.MakeRectangleMagic(this);
+            visitor.VisitRectangle(this);
         }
     }
 }

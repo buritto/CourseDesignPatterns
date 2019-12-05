@@ -9,6 +9,10 @@ namespace VisiterSolve
     {
         static void Main(string[] args)
         {
+            var areaVisitor = new AreaVisitor();
+            var drawVisitor = new DrawVisitor();
+            var magicVisitor = new MagicVisitor();
+
             var figures = new List<IElement>
             {
                 new Circle
@@ -27,9 +31,10 @@ namespace VisiterSolve
                 }
             };
 
-            var areaVisitor = new FakeAreaVisitor();
 
-            figures.ForEach(x => Console.WriteLine($"{x.GetType().Name} - {x.AcceptArea(areaVisitor)}"));
+            figures.ForEach(x => x.Accept(areaVisitor));
+            figures.ForEach(x => x.Accept(drawVisitor));
+            figures.ForEach(x => x.Accept(magicVisitor));
         }
     }
 }

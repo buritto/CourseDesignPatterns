@@ -6,19 +6,9 @@ namespace VisiterSolve.Elements
     {
         public int Radius;
 
-        public void AcceptDrawer(IDrawVisitor visitor)
+        public void Accept(IVisitor visitor)
         {
-            visitor.DrawCircle(this);
-        }
-
-        public int AcceptArea(IAreaVisitor visitor)
-        {
-            return visitor.GetCircleArea(this);
-        }
-
-        public object AcceptMagic(ISomeMagicVisitor visitor)
-        {
-            return visitor.MakeCircleMagic(this);
+            visitor.VisitCircle(this);
         }
     }
 }

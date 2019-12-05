@@ -6,20 +6,11 @@ namespace VisiterSolve.Elements
     {
         public int Base;
         public int Height;
+        
 
-        public void AcceptDrawer(IDrawVisitor visitor)
+        public void Accept(IVisitor visitor)
         {
-            visitor.DrawTriangle(this);
-        }
-
-        public int AcceptArea(IAreaVisitor visitor)
-        {
-            return visitor.GetTriangleArea(this);
-        }
-
-        public object AcceptMagic(ISomeMagicVisitor visitor)
-        {
-            return visitor.MakeTriangleMagic(this);
+           visitor.VisitTriangle(this);
         }
     }
 }
